@@ -33,8 +33,24 @@ body {
 	min-height: 300px;
 }
 
-.repo-description {
+.repo {
+	margin-bottom:5px;
+}
+.repo .repo-name {
+	font-weight:bold;
+}
+.repo .repo-description {
 	padding-left: 10px;
+}
+.repo a {
+	/* links inside li tags dont have a cursor pointer by default */
+	cursor: pointer;
+}
+.repo .repo-info {
+	margin-top:3px;
+}
+.repo .title {
+	font-weight:bold;
 }
 
 .footer {
@@ -61,6 +77,7 @@ body {
 	right: 0;
 	bottom: 0;
 	position: absolute;
+	opacity: 0.5;
 }
 
 

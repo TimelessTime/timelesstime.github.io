@@ -12,14 +12,16 @@
         $(repos).each(function() {
             if (this.name != rootGHSite) {
                 var repoString = "";
-                repoString += '<li>';
+                repoString += '<li class="repo">';
                 repoString += '<a class="repo-name" href="' + this.html_url + '">' + this.name + '</a>';
+                repoString += '<ul class="repo-info">';
                 if (this.description) {
-                    repoString += ': <span class="repo-description">' + this.description + '</span>';
+                    repoString += '<li class=""><span class="title">Overview: </span>' + this.description + '</li>';
                 }
                 if (this.homepage) {
-                    repoString += ' - <a class="repo-homepage">' + this.homepage + '</a>';
+                    repoString += '<li class="repo-homepage"><span class="title">Homepage: </span><a>' + this.homepage + '</a></li>';
                 }
+                repoString += '</ul>'
                 repoString += '</li>';
                 reposEl.append( repoString );
                 reposCount++;
