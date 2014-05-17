@@ -9,7 +9,7 @@ body {
 }
 
 .page {
-	margin-top:10px;
+	margin:10px 3px;
 }
 
 .header {
@@ -23,6 +23,7 @@ body {
 	display:none;
 }
 .header .logo {
+	display:block;
 	width:375px;
 	height:65px;
 	background-image: url('../images/tt-logo_375x65.png');
@@ -30,6 +31,19 @@ body {
 
 .content {
 	min-height: 300px;
+}
+
+.repo-description {
+	padding-left: 10px;
+}
+
+.footer {
+	border-top: 1px solid #999;
+	padding-top: 5px;
+	margin-top: 30px;
+	font-size: 11px;
+	font-weight: bold;
+	font-style: italic;
 }
 
 

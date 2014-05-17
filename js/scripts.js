@@ -11,7 +11,17 @@
         reposEl.children(".gh-loading").remove();
         $(repos).each(function() {
             if (this.name != rootGHSite) {
-                reposEl.append('<li><a href="'+ this.html_url +'">' + this.name + '</a></li>');
+                var repoString = "";
+                repoString += '<li>';
+                repoString += '<a class="repo-name" href="' + this.html_url + '">' + this.name + '</a>';
+                if (this.description) {
+                    repoString += ': <span class="repo-description">' + this.description + '</span>';
+                }
+                if (this.homepage) {
+                    repoString += ' - <a class="repo-homepage">' + this.homepage + '</a>';
+                }
+                repoString += '</li>';
+                reposEl.append( repoString );
                 reposCount++;
             }
         });
