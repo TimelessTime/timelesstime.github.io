@@ -1,6 +1,6 @@
 (function($){
 
-    var githubUser = "timelesstimeltd";
+    var githubUser = "timelesstime";
     var rootGHSite = githubUser+".github.io";
 
     "use strict"
