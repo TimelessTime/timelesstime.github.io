@@ -1,0 +1,50 @@
+@media (min-width: 1200px) {
+	.container {
+		max-width: 900px;
+	}
+}
+
+body {
+	background-color: #f8f8f8;
+}
+
+.page {
+	margin-top:10px;
+}
+
+.header {
+	border-bottom: 1px solid #999;
+	padding-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.header .logo h1 {
+	display:none;
+}
+.header .logo {
+	width:375px;
+	height:65px;
+	background-image: url('../images/tt-logo_375x65.png');
+}
+
+.content {
+	min-height: 300px;
+}
+
+
+.bg-image-wrapper {
+	right: 0;
+	bottom: 0;
+	position: relative;
+	z-index: -999;
+	display: block;
+}
+.bg-image {
+	width: 1300px;
+	height: 1000px;
+	background-image: url('../images/timelesstime-bottom-r-corner-4-col.png');
+	right: 0;
+	bottom: 0;
+	position: absolute;
+}
