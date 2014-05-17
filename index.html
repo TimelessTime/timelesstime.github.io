@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +17,12 @@
     <script src="js/html5shiv-3.7.0.js"></script>
     <script src="js/respond-1.4.2.min.js"></script>
     <![endif]-->
+
+    <script>
+        // change html js to no-js
+        var docElement = document.documentElement;
+        docElement.className = docElement.className.replace(/\bno-js\b/g, '') + ' js ';
+    </script>
 </head>
 <body>
     <div class="page">
@@ -31,15 +37,16 @@
             <div class="content">
                 <h1>TimelessTime on GitHub</h1>
                 <p>
-                    <a href="http://www.timelesstime.co.uk">TimelesssTime</a> does all of it's web development in house, we do not outsource any development or services. Through this development we create libraries and tools that may be useful to others. Any of these libraries or tools we feel may be useful are made available as Open Source projects so others may make use of, and extend, them.
+                    At <a href="http://www.timelesstime.co.uk">TimelesssTime</a> we do all of our web development in house, we do not outsource any development or services. Through this development we create libraries and tools that may be useful to others. Any of these libraries or tools we feel may be useful are made available as Open Source projects so others may make use of, and extend, them.
                 </p>
                 <p>
                     All Open Source projects are hosted on our <a href="https://github.com/TimelessTimeLtd">GitHub page</a> and can be cloned, forked and merged from there. Unless otherwise specified, the Source Code is <a href="./LICENSE">licensed</a> under LGPL v3 and may be freely used for non-profit purposes.
                 </p>
 
-                <h2>Open Source Tools and Libraries</h2>
-                <ul>
-                    <li>INSERT LINKS HERE</li>
+                <h2>Our Open Source Tools and Libraries</h2>
+                <ul id="github-repos">
+                    <li class="no-js-only">This list is dynamically created. You need to enable JavaScript in your browser so it can do it's work</li>
+                    <li class="js-only gh-loading">Loading projects...</li>
                 </ul>
             </div> <!-- end .content -->
 

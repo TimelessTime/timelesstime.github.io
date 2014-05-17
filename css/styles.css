@@ -48,3 +48,13 @@ body {
 	bottom: 0;
 	position: absolute;
 }
+
+
+.no-js .no-js-only,
+.js .js-only {
+	display:default;
+}
+.js .no-js-only,
+.no-js .js-only {
+	display:none;
+}
